@@ -9,6 +9,10 @@ const { verificaToken, verificaRole_Admin } = require('../middleware/authenticac
 const app = express();
 
 
+//===========================================
+// Consultar todos los usuarios
+//===========================================
+
 app.get('/usuario', verificaToken, (req, res, next) => {
 
    /*  return res.json({
@@ -55,6 +59,10 @@ app.get('/usuario', verificaToken, (req, res, next) => {
 
   
   });
+
+  //===========================================
+  // Crear usuarios
+  //===========================================
   
   app.post('/usuario', [verificaToken, verificaRole_Admin], (req, res) => {
   
@@ -86,6 +94,10 @@ app.get('/usuario', verificaToken, (req, res, next) => {
       });
   
   });
+
+  //===========================================
+  // Actualizar usuarios
+  //===========================================
   
   app.put('/usuario/:id', verificaToken, (req, res) => {
   
@@ -110,6 +122,10 @@ app.get('/usuario', verificaToken, (req, res, next) => {
       
   
   });
+
+//===========================================
+// Inactivar usuarios
+//===========================================
   
 app.delete('/usuario/:id', [verificaToken, verificaRole_Admin], (req, res) => {
 

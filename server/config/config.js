@@ -18,7 +18,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 // 60 minutos
 // 2 horas
 
-process.env.VENCIMIENTO_TOKEN = 60 * 60 * 24 * 30;
+process.env.VENCIMIENTO_TOKEN = '48h';
 
 //===========================================
 // SEED de Authenticación
