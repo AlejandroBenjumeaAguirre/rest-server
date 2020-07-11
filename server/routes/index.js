@@ -6,7 +6,9 @@ app.use(
     require('./usuario'),
     require('./login'),
     require('./categoria'),
-    require('./producto')
+    require('./producto'),
+    require('./upload'),
+    require('./imagenes')
 );
 
 

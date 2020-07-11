@@ -10,6 +10,7 @@ let productoSchema = new Schema({
     precioUni: { type: Number, required: [true, 'El precio es requerido']},
     descripcion: { type: String, required: false},
     disponibilidad: { type: Boolean, required: true, default: true },
+    img: { type: String, required: false},
     categoria: { type: Schema.Types.ObjectId, ref: 'Categoria'},
     usuario: { type: Schema.Types.ObjectId, ref: 'Usuario'}
 
